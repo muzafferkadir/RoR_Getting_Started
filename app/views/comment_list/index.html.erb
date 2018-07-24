@@ -1,0 +1,9 @@
+Comment List
+<% @comments.each do |comment| %>
+		 <br>
+    	id:<%= comment.id %>-
+      	commenter:<%= comment.commenter %>-
+      	body:<%= comment.body %>-
+      	article_id:<%= comment.article_id %>-
+      	created_at:<%= comment.created_at.strftime('%d %m %Y')%>
+ <% end %>
